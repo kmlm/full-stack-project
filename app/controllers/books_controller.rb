@@ -1,4 +1,4 @@
-class BooksController < ApplicationController
+class BooksController < ProtectedController
   before_action :set_book, only: [:show, :update, :destroy]
 
   # GET /books
