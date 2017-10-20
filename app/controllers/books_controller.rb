@@ -3,7 +3,7 @@ class BooksController < ProtectedController
 
   # GET /books
   def index
-    @books = Book.all
+    @books = current_user.books
 
     render json: @books
   end
