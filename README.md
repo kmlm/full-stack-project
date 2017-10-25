@@ -12,7 +12,7 @@ This README focuses on the back-end of the project. The front-end README can be 
 
 I completed the project with a one to many relationship between a user and books. The Wish list relies on the books resource and pulls individual rows from that table to display for the user.
 
-After creating the databse and launching my initial migration to Heroku, the first step was to scaffold the resource. I generated a scaffold for books that included columns for title, author, isbn, and price and included a reference to user so that it belonged to user in a one to many relationship. I then migrated again with the new migration file created. I assigned the routes for books excepting new and edit.
+After creating the database and launching my initial migration to Heroku, the first step was to scaffold the resource. I generated a scaffold for books that included columns for title, author, isbn, and price and included a reference to user so that it belonged to user in a one to many relationship. I then migrated again with the new migration file created. I assigned the routes for books excepting new and edit.
 
 The user model, routes, serializer, controller and curl scripts were already set up and I did not need to make adjustments. I moved on to the books controller. I set it up so that it inherits from protected controller. I wanted to ensure that a user only had access to the books on their list so for the index, set_user, and create methods I set it up so that it would be run using current_user.
 
@@ -51,4 +51,4 @@ I used rails for the API and ran curl scripts to test the API.
 
 ## Future Iterations
 
-In the future, I would like to add more resources with different relationships. A join table with many to many relationship would be a new challenge to incorporate in the app and would allow for a more community feel to the app, because you could have a global resource that many users could have access to and not just their own list.
+In the future, I would like to add more resources with different relationships. A join table with a many to many relationship between books and users would be a new challenge to incorporate in the app and would allow for a community aspect with the app, because you could have a global resource that many users could have access to and not just their own list.
