@@ -1,4 +1,4 @@
-# wishLit Front End
+# wishLit API
 
 ## Summary of Project
 
